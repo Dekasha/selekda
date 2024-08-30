@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="new-file-window">
+    <h2>Create New File</h2>
+    <input type="text" id="fileName" placeholder="File Name">
+    <input type="number" id="width" placeholder="Width (px)">
+    <input type="number" id="height" placeholder="Height (px)">
+    <br>
+    <button class="create-button">Create New</button>
+  </div>
+
+  <div class="workspace" id="workspace" style="display: none;">
+    <nav>
+      <!-- Navigation content -->
+      <button id="circleShapeButton">Circle Shape</button>
+      <button id="rectangleShapeButton">Rectangle Shape</button>
+    </nav>
+    <div class="leftbar">
+      <button id="brushButton">Brush</button>
+      <button id="eraserButton">Eraser</button>
+      <button id="rotateCWButton">Rotate CW</button>
+      <button id="rotateCCWButton">Rotate CCW</button>
+      <button id="flipHorizontalButton">Flip Horizontal</button>
+      <button id="flipVerticalButton">Flip Vertical</button>
+      <button id="shapeButton">Shape</button>
+      <button id="normalButton">Normal Mouse</button>
+      <button id="bucketButton">Bucket</button>
+      <button id="textButton">Text</button>
+      <button id="moveButton">Move</button>
+      <button id="stampButton">Stamp</button>
+      <button id="undoButton">Undo</button>
+      <button id="redoButton">Redo</button>
+      <button id="zoomOutButton">Zoom -</button>
+      <button id="zoomInButton">Zoom +</button>
+      <button id="importButton">Import</button>
+      <button id="exportButton">Export</button>
+
+
+      <!-- Brush Tool Properties -->
+      <div id="brushProperties">
+        <label>Brush Size:</label>
+        <input type="range" id="brushSize" class="slider" min="1" max="100" value="10">
+        <label>Brush Shape:</label>
+        <select id="brushShape">
+          <option value="round">Round</option>
+          <option value="square">Square</option>
+        </select>
+        <label>Brush Opacity:</label>
+        <select id="brushOpacity">
+          <option value="0">0%</option>
+          <option value="50">50%</option>
+          <option value="100">100%</option>
+        </select>
+      </div>
+
+      <!-- Eraser Tool Properties -->
+      <div id="eraserProperties">
+        <label>Eraser Size:</label>
+        <input type="range" id="eraserSize" class="slider" min="1" max="100" value="10">
+        <label>Eraser Shape:</label>
+        <select id="eraserShape">
+          <option value="round">Round</option>
+          <option value="square">Square</option>
+        </select>
+        <label>Eraser Opacity:</label>
+        <select id="eraserOpacity">
+          <option value="0">0%</option>
+          <option value="50">50%</option>
+          <option value="100">100%</option>
+        </select>
+      </div>
+
+      <!-- Layer Controls -->
+      <div id="layerControls">
+        <button id="duplicateLayerButton">Duplicate Layer</button>
+        <button id="deleteLayerButton">Delete Layer</button>
+        <label>Layer Opacity:</label>
+        <input type="range" id="layerOpacity" class="slider" min="0" max="100" value="100">
+        <label>Layer Brightness:</label>
+        <input type="range" id="layerBrightness" class="slider" min="0" max="100" value="100">
+        <label>Layer Saturation:</label>
+        <input type="range" id="layerSaturation" class="slider" min="0" max="100" value="100">
+        <label>Layer Greyscale:</label>
+        <input type="range" id="layerGreyscale" class="slider" min="0" max="100" value="0">
+      </div>
+
+      <!-- color picker -->
+      <div id="colorPickerContainer">
+        <label>Brush Color:</label>
+        <input type="color" id="colorPicker" value="#000000">
+      </div>
+
+    </div>
+
+
+
+    <div class="areacanvas" id="areacanvas">
+
+    </div>
+
+    <div class="rightbar">
+      <h3>Layers</h3>
+      <ul id="layerList">
+        <!-- Layer list will be dynamically populated -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

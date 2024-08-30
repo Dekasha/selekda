@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="../assets/logo.png" alt="logo webtech indonesia" style="width: 50px;">
+      <ul>
+        <li><a href="index.html" class="">Beranda</a></li>
+        <li><a href="blog.html" class="">Blog</a></li>
+        <li><a href="portfolio.html" class="">Portfolio</a></li>
+        <li><a href="admin.html" class="btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="margin-top: 70px;">
+    <section class="portfolio-pages">
+      <div class="portfolio-page-container">
+        <h1 style="text-align: center;">Portfolio</h1>
+        <div class="daftar-portfolio-page">
+          <div class="portfolio-page-no-modal" id="openModal">
+            <img class="portfolio-page-image" src="../assets/images (16).jpg" alt="">
+          </div>
+          <div class="portfolio-page-no-modal" id="openModal">
+            <img class="portfolio-page-image" src="../assets/images (16).jpg" alt="">
+          </div>
+          <div class="portfolio-page-no-modal" id="openModal">
+            <img class="portfolio-page-image" src="../assets/images (16).jpg" alt="">
+          </div>
+          <div class="portfolio-page-no-modal" id="openModal">
+            <img class="portfolio-page-image" src="../assets/images (16).jpg" alt="">
+          </div>
+          <div class="portfolio-page-no-modal" id="openModal">
+            <img class="portfolio-page-image" src="../assets/images (16).jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="modalOverlay"></div>
+
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close-button" id="closeModal">&times;</span>
+      <div class="portfolio-page" id="openModal">
+        <img class="portfolio-page-image" src="../assets/images (16).jpg" alt="">
+        <div style="padding: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p style="font-size: 10px;">25 dilihat</p>
+            <p style="font-size: 10px;">25 comment</p>
+          </div>
+          <p style="margin: 0px; padding: 0px; font-weight: bold; color: #ad49e1;">
+            judul cah ...
+          </p>
+          <p style="font-size: 12px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ratione expedita fugit nobis beatae,
+            earum
+            optio maiores ex repellat, ...
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p style="font-size: 13px;">author</p>
+            <p style="font-size: 13px;">29 Agustus 2024</p>
+          </div>
+          <hr>
+          <p style="margin: 0; margin-bottom: 6px; font-size: 13px;">
+            category :
+          </p>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <span class="tag">react</span>
+            <span class="tag">laravel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h5>Design By Juangga Deka</h5>
+    <ul>
+      <li><a href="https://www.instagram.com/dekasajaaa?igsh=bWFsNW02enhyNmY5" target="_blank"
+          style="color: #000;">Instagram</a></li> |
+      <li><a
+          href="https://www.linkedin.com/in/juangga-deka-b72232311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank" style="color: #000;">Linkedin</a>
+      </li> |
+      <li><a href="t.me/Keiii_D" target="_blank" style="color: #000;">Telegram</a></li>
+    </ul>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
